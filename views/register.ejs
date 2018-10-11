@@ -1,0 +1,13 @@
+<% include ./partials/header %>
+
+<div class = 'container'>
+  <h1>Register page</h1>
+
+  <form action = '/register' method = 'POST'>
+    <input class = 'form-control cg-input' type = 'text' placeholder = 'username' name = 'username' required>
+    <input class = 'form-control cg-input' type = 'password' placeholder = 'password' name = 'password' required>
+    <input class = 'btn btn-lg btn-primary cg-input' type = 'submit' value = 'Sign up'>
+  </form>
+</div>
+
+<% include ./partials/footer %>

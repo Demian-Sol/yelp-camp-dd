@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+
+
+
+<div class = 'container'>
+  <h1>Add new campground</h1>
+
+  <form action = '/cgroundslist' method = 'post'>
+    <input class = 'form-control cg-input' type = 'text' name = 'name' required placeholder = 'name'>
+    <input class = 'form-control cg-input' type = 'number' name = 'price' required placeholder = 'price per night' min = '0.01' step = '0.01'>
+    <input class = 'form-control cg-input' type = 'text', name = 'image' required placeholder = 'image url'>
+    <textarea class = 'form-control cg-input' name = 'description' placeholder = 'Enter your campground description here'></textarea>
+    <input class = 'btn btn-lg btn-primary cg-input' type = 'submit' value = 'Add campground'>
+  </form>
+  
+  <a href = '/'>Go Back</a>
+
+</div>
+
+<% include ../partials/footer %>

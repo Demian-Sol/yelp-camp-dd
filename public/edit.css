@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+}
+
+.container .cg-input {
+  width: 30%;
+  margin: 10px auto;
+}

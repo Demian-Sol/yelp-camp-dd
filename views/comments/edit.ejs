@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+
+<a href = '/cgroundslist/<%= id %>'>< Back</a>
+
+<div class = 'container'>
+  <h1>Create new review</h1>
+
+  <form action = '/cgroundslist/<%= id %>/comments/<%= comment._id %>?_method=PUT' method = 'post'>
+    <textarea class = 'form-control cg-input' name = 'comment[text]' required><%= comment.text %></textarea>
+    <input class = 'btn btn-lg btn-primary .cg-input' type = 'submit' value = 'Confirm'>
+  </form>
+  
+</div>
+
+<% include ../partials/footer %>

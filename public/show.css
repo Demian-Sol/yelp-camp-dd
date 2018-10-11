@@ -1,0 +1,15 @@
+.thumbnail {
+  padding: 0;
+}
+
+.thumbnail>img {
+  width:100%;
+}
+
+.btn-warning, .btn-success, .btn-danger {
+  color: black;
+}
+
+.delete-form {
+  display: inline;
+}

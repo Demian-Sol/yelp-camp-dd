@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+
+<a href = '/cgroundslist/<%= id %>'>< Back</a>
+
+<div class = 'container'>
+  <h1>Create new review</h1>
+
+  <form action = '/cgroundslist/<%= id %>/comments' method = 'post'>
+    <textarea class = 'form-control cg-input' name = 'comment[text]' placeholder = 'Leave your review here' required></textarea>
+    <input class = 'btn btn-lg btn-primary .cg-input' type = 'submit' value = 'Create review'>
+  </form>
+  
+</div>
+
+<% include ../partials/footer %>

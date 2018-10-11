@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+<div class = 'container'>
+  <h1>Edit existing campground</h1>
+
+  <form action = '/cgroundslist/<%= campg._id %>?_method=PUT' method = 'post'>
+    <input class = 'form-control cg-input' type = 'text' name = 'campground[name]' required value = <%= campg.name %>>
+    <input class = 'form-control cg-input' type = 'number' name = 'campground[price]' value = <%= campg.price %> required min = '0.01' step = '0.01'>
+    <input class = 'form-control cg-input' type = 'text', name = 'campground[image]' required value = <%= campg.image %>>
+    <textarea class = 'form-control cg-input' name = 'campground[description]'><%= campg.description %></textarea>
+    <input class = 'btn btn-lg btn-primary cg-input' type = 'submit' value = 'Edit'>
+  </form>
+  
+  <a href = '/'>Go Back</a>
+
+</div>
+
+<% include ../partials/footer %>
